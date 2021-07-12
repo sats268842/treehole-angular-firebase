@@ -9,8 +9,8 @@
   <nz-page-header>
     <nz-page-header-title>
       <a [routerLink]="['/']">
-        <img src="./assets/treehole-icon-small.png" alt="logo" />
-        {{ "TITLE" | translate }}
+        <img src="./assets/logo.png" width="200px" alt="logo" />
+        <!-- {{ "TITLE" | translate }} -->
       </a>
     </nz-page-header-title>
     <nz-page-header-subtitle class="dn db-ns">
@@ -21,15 +21,15 @@
         <i nz-icon nzType="edit"></i>{{ "ADD_YOUR_POST" | translate }}
       </a>
 
-      <button
+      <!-- <button
         nz-button
         nz-dropdown
         [nzDropdownMenu]="languageMenu"
         nzPlacement="bottomRight"
       >
         <i nz-icon nzType="global"></i>{{ "LANGUAGE" | translate }}
-      </button>
-      <nz-dropdown-menu #languageMenu="nzDropdownMenu">
+      </button> -->
+      <!-- <nz-dropdown-menu #languageMenu="nzDropdownMenu">
         <ul nz-menu nzSelectable>
           <li
             nz-menu-item
@@ -46,7 +46,7 @@
             中文
           </li>
         </ul>
-      </nz-dropdown-menu>
+      </nz-dropdown-menu> -->
     </nz-page-header-extra>
   </nz-page-header>
   <nz-content>
@@ -54,6 +54,5 @@
   </nz-content>
   <nz-footer>
     {{ "TITLE" | translate }} © {{ today | date: "yyyy" }}
-    <a href="https://github.com/xiongemi">https://github.com/xiongemi</a>
   </nz-footer>
 </nz-layout>

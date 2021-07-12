@@ -9,3 +9,12 @@
 .ant-comment-content-author > span {
   white-space: normal;
 }
+
+.ant-btn-primary {
+  background: #fd4b29;
+  border-color: #fd4b29;
+}
+.ant-btn-primary:hover {
+  background: #3c4657;
+  border-color: #3c4657;
+}

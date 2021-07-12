@@ -22,12 +22,12 @@ export class AddPostHomeComponent {
     title: new FormControl(null, [
       Validators.required,
       Validators.minLength(10),
-      Validators.maxLength(200),
+      Validators.maxLength(20),
     ]),
     message: new FormControl(null, [
       Validators.required,
-      Validators.minLength(50),
-      Validators.maxLength(1000),
+      Validators.minLength(10),
+      Validators.maxLength(50),
     ]),
   });
 
@@ -37,7 +37,7 @@ export class AddPostHomeComponent {
     private store: Store,
     private location: Location,
     private modalService: ModalService
-  ) {}
+  ) { }
 
   savePost() {
     markFormDeepDirty(this.addForm);

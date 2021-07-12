@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy:firebase": "firebase deploy",
+    "deploy:firebase": "firebase deploy --only hosting,storage",
     "deploy:github": "ng deploy --base-href=/treehole-angular-firebase/",
     "dev:ssr": "ng run treehole-angular-firebase:serve-ssr",
     "serve:ssr": "node dist/treehole-angular-firebase/server/main.js",
